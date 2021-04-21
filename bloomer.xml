@@ -3,365 +3,846 @@
   <Constants>
     <Constant Name="AlphaFillColor" Value="#ffffff" />
     <Constant Name="AlphaLegendColor" Value="#000000" />
-    <Constant Name="ModFillColor" Value="#56cfff" />
+    <Constant Name="ModFillColor" Value="#cfcfcf" />
     <Constant Name="ModLegendColor" Value="#000000" />
     <Constant Name="KeycapBorderColor" Value="#000000" />
     <Constant Name="M2SpacerSize" Value="3.563" />
     <Constant Name="M2ScrewSize" Value="2.3" />
     <Constant Name="KeycapDiameterMm1u" Value="18.1" />
     <Constant Name="KeyMarginMillimeters" Value="0.475" />
+    <Constant Name="CaseFillColor" Value="#7f7f7f" />
+    <Constant Name="CaseStrokeColor" Value="#000000" />
+    <Constant Name="KeywellFillColor" Value="#5f5f5f" />
   </Constants>
   <Layers>
-    <Layer Name="Switch" ZIndex="3" XOffset="175" YOffset="80">
+    <Layer Name="top" ZIndex="5" XOffset="185" YOffset="80">
       <Groups>
+        <Group Name="CasePerimeter" XOffset="-185" YOffset="-80">
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteMoveTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="31.123" Y="3.412" /> <ControlPoint X="28.125" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="93.594" Y="5.627" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="99.546" Y="6.255" /> <ControlPoint X="96.592" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="113.854" Y="8.777" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="119.502" Y="10.618" /> <ControlPoint X="116.808" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="148.792" Y="24.97" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="154.486" Y="26.29" /> <ControlPoint X="151.486" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="215.514" Y="26.29" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="221.208" Y="24.97" /> <ControlPoint X="218.514" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="250.498" Y="10.618" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="256.146" Y="8.777" /> <ControlPoint X="253.192" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="270.454" Y="6.255" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="276.406" Y="5.627" /> <ControlPoint X="273.408" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="338.877" Y="3.412" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="342.396" Y="6.26" /> <ControlPoint X="341.875" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="364.771" Y="133.154" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="362.338" Y="136.629" /> <ControlPoint X="365.292" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="320.628" Y="143.984" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="314.75" Y="145.177" /> <ControlPoint X="317.673" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="263.901" Y="156.876" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="258.023" Y="158.07" /> <ControlPoint X="260.977" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="226.356" Y="163.653" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="220.405" Y="164.329" /> <ControlPoint X="223.401" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="216.392" Y="164.536" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="210.396" Y="164.69" /> <ControlPoint X="213.396" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="159.604" Y="164.69" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="153.608" Y="164.536" /> <ControlPoint X="156.604" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="149.595" Y="164.329" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="143.644" Y="163.653" /> <ControlPoint X="146.599" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="111.977" Y="158.07" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="106.099" Y="156.876" /> <ControlPoint X="109.023" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="55.25" Y="145.177" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="49.372" Y="143.984" /> <ControlPoint X="52.327" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="7.662" Y="136.629" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="5.229" Y="133.154" /> <ControlPoint X="4.708" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="LeftKeywellPerimeter" Rotation="10" XOffset="-157.162" YOffset="-11.578">
+          <Constants>
+            <Constant Name="X01"  Value="-0.525" />
+            <Constant Name="X02"  Value="38.625" />
+            <Constant Name="X03"  Value="57.675" />
+            <Constant Name="X04"  Value="75.675" />
+            <Constant Name="X05"  Value="94.725" />
+            <Constant Name="X06"  Value="133.875" />
+            <Constant Name="X07"  Value="114.825" />
+            <Constant Name="X08"  Value="95.775" />
+            <Constant Name="X09"  Value="76.725" />
+            <Constant Name="X10"  Value="56.625" />
+            <Constant Name="X11"  Value="37.575" />
+            <Constant Name="Y01"  Value="60.175" />
+            <Constant Name="Y02"  Value="57.175" />
+            <Constant Name="Y03"  Value="52.175" />
+            <Constant Name="Y04"  Value="58.175" />
+            <Constant Name="Y05"  Value="63.175" />
+            <Constant Name="Y06"  Value="43.075" />
+            <Constant Name="Y07"  Value="-52.175" />
+            <Constant Name="Y08"  Value="-57.175" />
+            <Constant Name="Y09"  Value="-63.175" />
+            <Constant Name="Y10"  Value="-58.175" />
+            <Constant Name="Y11"  Value="-55.175" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y04}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y05}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y06}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y07}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y08}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y09}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y10}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y11}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="CenterKeywellCutout1" YOffset="-69.21">
+          <Constants>
+            <Constant Name="X01"  Value="-29.1" />
+            <Constant Name="X02"  Value="29.1" />
+            <Constant Name="Y01"  Value="48.15" />
+            <Constant Name="Y02"  Value="28.05" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="CenterKeywellCutout2" YOffset="-12.585">
+          <Constants>
+            <Constant Name="X01"  Value="-29.1" />
+            <Constant Name="X02"  Value="29.1" />
+            <Constant Name="Y01"  Value="39.15" />
+            <Constant Name="Y02"  Value="0" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="CenterKeywellCutout3" YOffset="74.19">
+          <Constants>
+            <Constant Name="X01"  Value="-29.1" />
+            <Constant Name="X02"  Value="29.1" />
+            <Constant Name="X03"  Value="10.05" />
+            <Constant Name="X04"  Value="-10.05" />
+            <Constant Name="Y01"  Value="0" />
+            <Constant Name="Y02"  Value="-20.1" />
+            <Constant Name="Y03"  Value="-39.15" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="RightKeywellPerimeter" Rotation="-10" XOffset="25.838" YOffset="11.578">
+          <Constants>
+            <Constant Name="X01"  Value="133.875" />
+            <Constant Name="X02"  Value="94.725" />
+            <Constant Name="X03"  Value="75.675" />
+            <Constant Name="X04"  Value="57.675" />
+            <Constant Name="X05"  Value="38.625" />
+            <Constant Name="X06"  Value="-0.525" />
+            <Constant Name="X07"  Value="18.525" />
+            <Constant Name="X08"  Value="37.575" />
+            <Constant Name="X09"  Value="56.625" />
+            <Constant Name="X10"  Value="76.725" />
+            <Constant Name="X11"  Value="95.775" />
+            <Constant Name="Y01"  Value="60.175" />
+            <Constant Name="Y02"  Value="57.175" />
+            <Constant Name="Y03"  Value="52.175" />
+            <Constant Name="Y04"  Value="58.175" />
+            <Constant Name="Y05"  Value="63.175" />
+            <Constant Name="Y06"  Value="43.075" />
+            <Constant Name="Y07"  Value="-52.175" />
+            <Constant Name="Y08"  Value="-57.175" />
+            <Constant Name="Y09"  Value="-63.175" />
+            <Constant Name="Y10"  Value="-58.175" />
+            <Constant Name="Y11"  Value="-55.175" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y04}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y05}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y06}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y07}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y08}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y09}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y10}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y11}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+      </Groups>
+    </Layer>
+    <Layer Name="switch" ZIndex="4" XOffset="185" YOffset="80">
+      <Groups>
+        <Group Name="Case" XOffset="-185" YOffset="-80">
+          <Children>
+            <Circle Size="${M2ScrewSize}" XOffset="-147" YOffset="-68" />
+            <Circle Size="${M2ScrewSize}" XOffset="-25" YOffset="-68" />
+            <Circle Size="${M2ScrewSize}" XOffset="25" YOffset="-68" />
+            <Circle Size="${M2ScrewSize}" XOffset="147" YOffset="-68" />
+            <Circle Size="${M2ScrewSize}" XOffset="-168" YOffset="50" />
+            <Circle Size="${M2ScrewSize}" XOffset="-30" YOffset="78" />
+            <Circle Size="${M2ScrewSize}" XOffset="30" YOffset="78" />
+            <Circle Size="${M2ScrewSize}" XOffset="168" YOffset="50" />
+            <Group Name="CasePerimeter">
+              <Children>
+                <Path Stroke="${CaseStrokeColor}" Fill="${CaseFillColor}">
+                  <Components>
+                    <AbsoluteMoveTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteMoveTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="31.123" Y="3.412" /> <ControlPoint X="28.125" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="93.594" Y="5.627" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="99.546" Y="6.255" /> <ControlPoint X="96.592" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="113.854" Y="8.777" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="119.502" Y="10.618" /> <ControlPoint X="116.808" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="148.792" Y="24.97" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="154.486" Y="26.29" /> <ControlPoint X="151.486" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="215.514" Y="26.29" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="221.208" Y="24.97" /> <ControlPoint X="218.514" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="250.498" Y="10.618" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="256.146" Y="8.777" /> <ControlPoint X="253.192" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="270.454" Y="6.255" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="276.406" Y="5.627" /> <ControlPoint X="273.408" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="338.877" Y="3.412" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="342.396" Y="6.26" /> <ControlPoint X="341.875" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="364.771" Y="133.154" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="362.338" Y="136.629" /> <ControlPoint X="365.292" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="320.628" Y="143.984" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="314.75" Y="145.177" /> <ControlPoint X="317.673" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="263.901" Y="156.876" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="258.023" Y="158.07" /> <ControlPoint X="260.977" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="226.356" Y="163.653" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="220.405" Y="164.329" /> <ControlPoint X="223.401" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="216.392" Y="164.536" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="210.396" Y="164.69" /> <ControlPoint X="213.396" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="159.604" Y="164.69" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="153.608" Y="164.536" /> <ControlPoint X="156.604" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="149.595" Y="164.329" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="143.644" Y="163.653" /> <ControlPoint X="146.599" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="111.977" Y="158.07" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="106.099" Y="156.876" /> <ControlPoint X="109.023" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="55.25" Y="145.177" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="49.372" Y="143.984" /> <ControlPoint X="52.327" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="7.662" Y="136.629" /> </AbsoluteLineTo>
+                    <AbsoluteQuadraticCurveTo> <EndPoint X="5.229" Y="133.154" /> <ControlPoint X="4.708" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                    <AbsoluteLineTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteLineTo>
+                  </Components>
+                </Path>
+              </Children>
+            </Group>
+          </Children>
+        </Group>
         <Group Name="Outer">
           <Children>
-            <Stack Name="Left" Rotation="10" Orientation="Horizontal" XOffset="-88">
+            <Stack Name="Left" Rotation="10" Orientation="Horizontal" XOffset="-91.5">
               <Children>
-                <Stack Name="Column1" YOffset="2.5" Orientation="Vertical">
+                <!-- TODO Remove from this layer -->
+                <Group Name="LeftKeywellPerimeter" Visible="false">
+                  <Constants>
+                    <Constant Name="X01"  Value="-0.525" />
+                    <Constant Name="X02"  Value="38.625" />
+                    <Constant Name="X03"  Value="57.675" />
+                    <Constant Name="X04"  Value="75.675" />
+                    <Constant Name="X05"  Value="94.725" />
+                    <Constant Name="X06"  Value="133.875" />
+                    <Constant Name="X07"  Value="114.825" />
+                    <Constant Name="X08"  Value="95.775" />
+                    <Constant Name="X09"  Value="76.725" />
+                    <Constant Name="X10"  Value="56.625" />
+                    <Constant Name="X11"  Value="37.575" />
+                    <Constant Name="Y01"  Value="60.175" />
+                    <Constant Name="Y02"  Value="57.175" />
+                    <Constant Name="Y03"  Value="52.175" />
+                    <Constant Name="Y04"  Value="58.175" />
+                    <Constant Name="Y05"  Value="63.175" />
+                    <Constant Name="Y06"  Value="43.075" />
+                    <Constant Name="Y07"  Value="-52.175" />
+                    <Constant Name="Y08"  Value="-57.175" />
+                    <Constant Name="Y09"  Value="-63.175" />
+                    <Constant Name="Y10"  Value="-58.175" />
+                    <Constant Name="Y11"  Value="-55.175" />
+                  </Constants>
                   <Children>
-                      <Key Name="Column1Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Path Fill="${KeywellFillColor}" Stroke="${CaseStrokeColor}">
+                      <Components>
+                        <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y03}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y04}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y05}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y06}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y07}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y08}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y09}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y10}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y11}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                      </Components>
+                    </Path>
+                  </Children>
+                </Group>
+                <Stack Name="Column00" YOffset="2.5" Orientation="Vertical">
+                  <Children>
+                      <Key Name="Column00Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F1" FontSize="4" Color="${AlphaLegendColor}" />
                     </Key>
-                    <Key Name="Column1Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="=" FontSize="6" Color="${AlphaLegendColor}" />
+                    <Key Name="Column00Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="+" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="=" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column1Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column00Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="TAB" FontSize="4" />
                     </Key>
-                    <Key Name="Column1Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column00Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="ESC" FontSize="4" />
                     </Key>
-                    <Key Name="Column1Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column00Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="SHFT" FontSize="4" />
                     </Key>
-                    <Key Name="Column1Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column00Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="CTRL" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column2" YOffset="2.5" Orientation="Vertical">
+                <Stack Name="Column01" YOffset="2.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column2Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column01Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F2" FontSize="4" />
                     </Key>
-                    <Key Name="Column2Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="1" FontSize="6" />
+                    <Key Name="Column01Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="!" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="1" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column2Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column01Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="Q" FontSize="6" />
                     </Key>
-                    <Key Name="Column2Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column01Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="A" FontSize="6" />
                     </Key>
-                    <Key Name="Column2Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column01Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="Z" FontSize="6" />
                     </Key>
-                    <Key Name="Column2Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column01Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="OS" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column3" YOffset="0.5" Orientation="Vertical">
+                <Stack Name="Column02" YOffset="-0.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column3Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column02Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F3" FontSize="4" />
                     </Key>
-                    <Key Name="Column3Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="2" FontSize="6" />
+                    <Key Name="Column02Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="@" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="2" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column3Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column02Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="W" FontSize="6" />
                     </Key>
-                    <Key Name="Column3Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column02Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="S" FontSize="6" />
                     </Key>
-                    <Key Name="Column3Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column02Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="X" FontSize="6" />
                     </Key>
-                    <Key Name="Column3Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column02Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="ALT" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column4" YOffset="-5.5" Orientation="Vertical">
+                <Stack Name="Column03" YOffset="-5.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column4Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column03Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F4" FontSize="4" />
                     </Key>
-                    <Key Name="Column4Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="3" FontSize="6" />
+                    <Key Name="Column03Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="#" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="3" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column4Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column03Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="E" FontSize="6" />
                     </Key>
-                    <Key Name="Column4Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column03Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="D" FontSize="6" />
                     </Key>
-                    <Key Name="Column4Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column03Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="C" FontSize="6" />
                     </Key>
-                    <Key Name="Column4Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="`" FontSize="6" />
+                    <Key Name="Column03Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="~" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="`" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column5" YOffset="0.5" Orientation="Vertical">
+                <Stack Name="Column04" YOffset="0.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column5Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column04Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F5" FontSize="4" />
                     </Key>
-                    <Key Name="Column5Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="4" FontSize="6" />
+                    <Key Name="Column04Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="$" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="4" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column5Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column04Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="R" FontSize="6" />
                     </Key>
-                    <Key Name="Column5Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column04Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F" FontSize="6" />
                     </Key>
-                    <Key Name="Column5Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column04Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="V" FontSize="6" />
                     </Key>
-                    <Key Name="Column5Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column04Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="FN" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column6" YOffset="5.5" Orientation="Vertical">
+                <Stack Name="Column05" YOffset="5.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column6Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column05Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F6" FontSize="4" />
                     </Key>
-                    <Key Name="Column6Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="5" FontSize="6" />
+                    <Key Name="Column05Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="%" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="5" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column6Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column05Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="T" FontSize="6" />
                     </Key>
-                    <Key Name="Column6Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column05Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="G" FontSize="6" />
                     </Key>
-                    <Key Name="Column6Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column05Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="B" FontSize="6" />
                     </Key>
-                    <Key Name="Column6Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column05Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="BKSP" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column7" YOffset="5.5" Orientation="Vertical">
+                <Stack Name="Column06" YOffset="5.5" Orientation="Vertical">
                   <Children>
-                    <Spacer Height="95" Width="19" />
-                    <Key Name="Column7Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="95.25" Width="19.05" />
+                    <!-- This is "Key04" because 1 through 4 are defined below. -->
+                    <Key Name="Column06Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="DEL" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
               </Children>
             </Stack>
-            <Stack Name="Center" YOffset="7">
+            <Stack Name="Center" YOffset="16.515">
               <Children>
-                <Stack Name="Column8" Orientation="Vertical" YOffset="2.5">
+                <Group Name="CenterKeywellCutout1" XOffset="28.575" YOffset="-85.725" Visible="false">
+                  <Constants>
+                    <Constant Name="X01"  Value="-29.1" />
+                    <Constant Name="X02"  Value="29.1" />
+                    <Constant Name="Y01"  Value="48.15" />
+                    <Constant Name="Y02"  Value="28.05" />
+                  </Constants>
                   <Children>
-                    <Key Name="Column8Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Path Fill="${KeywellFillColor}" Stroke="${CaseStrokeColor}">
+                      <Components>
+                        <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                      </Components>
+                    </Path>
+                  </Children>
+                </Group>
+                <Group Name="CenterKeywellCutout2" XOffset="28.575" YOffset="-29.1" Visible="false">
+                  <Constants>
+                    <Constant Name="X01"  Value="-29.1" />
+                    <Constant Name="X02"  Value="29.1" />
+                    <Constant Name="Y01"  Value="39.15" />
+                    <Constant Name="Y02"  Value="0" />
+                  </Constants>
+                  <Children>
+                    <Path Fill="${KeywellFillColor}" Stroke="${CaseStrokeColor}">
+                      <Components>
+                        <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                      </Components>
+                    </Path>
+                  </Children>
+                </Group>
+                <Group Name="CenterKeywellCutout3" XOffset="28.575" YOffset="57.675" Visible="false">
+                  <Constants>
+                    <Constant Name="X01"  Value="-29.1" />
+                    <Constant Name="X02"  Value="29.1" />
+                    <Constant Name="X03"  Value="10.05" />
+                    <Constant Name="X04"  Value="-10.05" />
+                    <Constant Name="Y01"  Value="0" />
+                    <Constant Name="Y02"  Value="-20.1" />
+                    <Constant Name="Y03"  Value="-39.15" />
+                  </Constants>
+                  <Children>
+                    <Path Fill="${KeywellFillColor}" Stroke="${CaseStrokeColor}">
+                      <Components>
+                        <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y03}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                      </Components>
+                    </Path>
+                  </Children>
+                </Group>
+                <Stack Name="Column06" Orientation="Vertical">
+                  <Children>
+                    <Key Name="Column06Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="PRSC" FontSize="4" />
                     </Key>
-                    <Spacer Height="10" Width="19" />
-                    <Key Name="Column8Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="9.525" />
+                    <Key Name="Column06Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="INS" FontSize="4" />
                     </Key>
-                    <Key Name="Column8Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column06Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="CAPS" FontSize="4" />
                     </Key>
-                    <Spacer Height="14" Width="19" />
-                    <Key Name="Column8Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="9.525" />
+                    <Spacer Height="19.05" />
+                    <Key Name="Column06Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="LEFT" FontSize="4" />
                     </Key>
-                    <Spacer Height="19" Width="19" />
                   </Children>
                 </Stack>
-                <Stack Name="Column9" Orientation="Vertical" YOffset="-2.5">
+                <Stack Name="Column07" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column9Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column07Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="SCLK" FontSize="4" />
                     </Key>
-                    <Spacer Height="10" Width="10" />
-                    <Key Name="Column9Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="9.525" />
+                    <Key Name="Column07Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="HOME" FontSize="4" />
                     </Key>
-                    <Key Name="Column9Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column07Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="END" FontSize="4" />
                     </Key>
-                    <Spacer Height="10" Width="19" />
-                    <Key Name="Column9Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="9.525" />
+                    <Key Name="Column07Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="UP" FontSize="4" />
                     </Key>
-                    <Key Name="Column9Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column07Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="DOWN" FontSize="4" />
                     </Key>
-                    <Spacer Height="4" Width="19" />
                   </Children>
                 </Stack>
-                <Stack Name="Column10" Orientation="Vertical" YOffset="2.5">
+                <Stack Name="Column08" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column10Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column08Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="PAUS" FontSize="4" />
                     </Key>
-                    <Spacer Height="10" Width="19" />
-                    <Key Name="Column10Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="9.525" />
+                    <Key Name="Column08Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="PGUP" FontSize="4" />
                     </Key>
-                    <Key Name="Column10Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column08Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="PGDN" FontSize="4" />
                     </Key>
-                    <Spacer Height="14" Width="19" />
-                    <Key Name="Column10Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Spacer Height="9.525" />
+                    <Spacer Height="19.05" />
+                    <Key Name="Column08Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="RGHT" FontSize="4" />
                     </Key>
-                    <Spacer Height="19" Width="19" />
                   </Children>
                 </Stack>
               </Children>
             </Stack>
-            <Stack Name="Right" Rotation="-10" XOffset="88">
+            <Stack Name="Right" Rotation="-10" XOffset="91.5">
               <Children>
-                <Stack Name="Column11" YOffset="5.5" Orientation="Vertical">
+                <!-- TODO Remove from this layer -->
+                <Group Name="RightKeywellPerimeter" Visible="false">
+                  <Constants>
+                    <Constant Name="X01"  Value="133.875" />
+                    <Constant Name="X02"  Value="94.725" />
+                    <Constant Name="X03"  Value="75.675" />
+                    <Constant Name="X04"  Value="57.675" />
+                    <Constant Name="X05"  Value="38.625" />
+                    <Constant Name="X06"  Value="-0.525" />
+                    <Constant Name="X07"  Value="18.525" />
+                    <Constant Name="X08"  Value="37.575" />
+                    <Constant Name="X09"  Value="56.625" />
+                    <Constant Name="X10"  Value="76.725" />
+                    <Constant Name="X11"  Value="95.775" />
+                    <Constant Name="Y01"  Value="60.175" />
+                    <Constant Name="Y02"  Value="57.175" />
+                    <Constant Name="Y03"  Value="52.175" />
+                    <Constant Name="Y04"  Value="58.175" />
+                    <Constant Name="Y05"  Value="63.175" />
+                    <Constant Name="Y06"  Value="43.075" />
+                    <Constant Name="Y07"  Value="-52.175" />
+                    <Constant Name="Y08"  Value="-57.175" />
+                    <Constant Name="Y09"  Value="-63.175" />
+                    <Constant Name="Y10"  Value="-58.175" />
+                    <Constant Name="Y11"  Value="-55.175" />
+                  </Constants>
                   <Children>
-                    <Spacer Height="95" Width="19" />
-                    <Key Name="Column11Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Path Fill="${KeywellFillColor}" Stroke="${CaseStrokeColor}">
+                      <Components>
+                        <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y02}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y03}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y04}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y05}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y06}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y07}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y08}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y09}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y10}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y11}" /> </AbsoluteLineTo>
+                        <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                      </Components>
+                    </Path>
+                  </Children>
+                </Group>
+                <Stack Name="Column08" YOffset="5.5" Orientation="Vertical">
+                  <Children>
+                    <Spacer Height="95.25" Width="19.05" />
+                    <!-- This is "Key04" because 1 through 4 are defined above. -->
+                    <Key Name="Column08Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="ENT" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column12" YOffset="5.5" Orientation="Vertical">
+                <Stack Name="Column09" YOffset="5.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column12Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column09Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F7" FontSize="4" />
                     </Key>
-                    <Key Name="Column12Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="6" FontSize="6" />
+                    <Key Name="Column09Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="^" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="6" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column12Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column09Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="Y" FontSize="6" />
                     </Key>
-                    <Key Name="Column12Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column09Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="H" FontSize="6" />
                     </Key>
-                    <Key Name="Column12Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column09Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="N" FontSize="6" />
                     </Key>
-                    <Key Name="Column12Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column09Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="SPC" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column13" YOffset="0.5" Orientation="Vertical">
+                <Stack Name="Column10" YOffset="0.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column13Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column10Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F8" FontSize="4" />
                     </Key>
-                    <Key Name="Column13Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="7" FontSize="6" />
+                    <Key Name="Column10Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="&amp;" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="7" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column13Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column10Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="U" FontSize="6" />
                     </Key>
-                    <Key Name="Column13Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column10Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="J" FontSize="6" />
                     </Key>
-                    <Key Name="Column13Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column10Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="M" FontSize="6" />
                     </Key>
-                    <Key Name="Column13Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="[" FontSize="6" />
+                    <Key Name="Column10Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                        <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="{" FontSize="4" Color="${AlphaLegendColor}" YOffset="-3" />
+                        <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="[" FontSize="4" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column14" YOffset="-5.5" Orientation="Vertical">
+                <Stack Name="Column11" YOffset="-5.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column14Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column11Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F9" FontSize="4" />
                     </Key>
-                    <Key Name="Column14Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="8" FontSize="6" />
+                    <Key Name="Column11Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="*" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="8" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column14Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column11Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="I" FontSize="6" />
                     </Key>
-                    <Key Name="Column14Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column11Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="K" FontSize="6" />
                     </Key>
-                    <Key Name="Column14Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="," FontSize="6" />
+                    <Key Name="Column11Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="&lt;" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="," FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column14Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="]" FontSize="6" />
+                    <Key Name="Column11Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                        <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="}" FontSize="4" Color="${AlphaLegendColor}" YOffset="-3" />
+                        <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="]" FontSize="4" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column15" YOffset="-0.5" Orientation="Vertical">
+                <Stack Name="Column12" YOffset="-0.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column15Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column12Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F10" FontSize="4" />
                     </Key>
-                    <Key Name="Column15Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="9" FontSize="6" />
+                    <Key Name="Column12Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="(" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="9" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column15Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column12Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="O" FontSize="6" />
                     </Key>
-                    <Key Name="Column15Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column12Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="L" FontSize="6" />
                     </Key>
-                    <Key Name="Column15Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="." FontSize="6" />
+                    <Key Name="Column12Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="&gt;" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="." FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column15Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column12Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="ALT" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column16" YOffset="2.5" Orientation="Vertical">
+                <Stack Name="Column13" YOffset="2.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column16Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column13Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F11" FontSize="4" />
                     </Key>
-                    <Key Name="Column16Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" FontSize="6" />
+                    <Key Name="Column13Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text=")" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column16Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column13Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="P" FontSize="6" />
                     </Key>
-                    <Key Name="Column16Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text=";" FontSize="6" />
+                    <Key Name="Column13Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text=":" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text=";" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column16Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="/" FontSize="6" />
+                    <Key Name="Column13Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="/" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column16Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column13Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="OS" FontSize="4" />
                     </Key>
                   </Children>
                 </Stack>
-                <Stack Name="Column17" YOffset="2.5" Orientation="Vertical">
+                <Stack Name="Column14" YOffset="2.5" Orientation="Vertical">
                   <Children>
-                    <Key Name="Column17Key1" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column14Key00" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="F12" FontSize="4" />
                     </Key>
-                    <Key Name="Column17Key2" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="-" FontSize="6" />
+                    <Key Name="Column14Key01" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${AlphaFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="_" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="-" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column17Key3" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="\" FontSize="6" />
+                    <Key Name="Column14Key02" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="|" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="\" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column17Key4" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
-                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="'" FontSize="6" />
+                    <Key Name="Column14Key03" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="&quot;" FontSize="6" Color="${AlphaLegendColor}" YOffset="-3" />
+                      <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="'" FontSize="6" Color="${AlphaLegendColor}" YOffset="3" />
                     </Key>
-                    <Key Name="Column17Key5" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column14Key04" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="SHFT" FontSize="4" />
                     </Key>
-                    <Key Name="Column17Key6" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
+                    <Key Name="Column14Key05" Width="${KeycapDiameterMm1u}" Height="${KeycapDiameterMm1u}" Margin="${KeyMarginMillimeters}" Fill="${ModFillColor}" Stroke="${KeycapBorderColor}">
                       <Legend HorizontalAlignment="Center" VerticalAlignment="Center" Text="CTRL" FontSize="4" />
                     </Key>
                   </Children>
@@ -370,188 +851,411 @@
             </Stack>
           </Children>
         </Group>
-        <Group Name="Case">
+        <!--
+        -->
+        <Group Name="Elite-C" YOffset="-31.448" Visible="true">
+          <Constants>
+            <Constant Name="X01"  Value="-9" />
+            <Constant Name="X02"  Value="9" />
+            <Constant Name="Y01"  Value="-16.5" />
+            <Constant Name="Y02"  Value="16.5" />
+          </Constants>
           <Children>
-            <Circle Size="${M2ScrewSize}" XOffset="-147" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="-25" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="25" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="147" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="-168" YOffset="50" />
-            <Circle Size="${M2ScrewSize}" XOffset="-30" YOffset="78" />
-            <Circle Size="${M2ScrewSize}" XOffset="30" YOffset="78" />
-            <Circle Size="${M2ScrewSize}" XOffset="168" YOffset="50" />
-            <Path>
-                <Components>
-                    <AbsoluteMoveTo>
-                        <EndPoint X="0" Y="-73" />
-                    </AbsoluteMoveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="147" Y="-73" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="152" Y="-66" />
-                        <ControlPoint X="150.711" Y="-73" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="173" Y="48" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="165" Y="56" />
-                        <ControlPoint X="174.125" Y="54.105" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="35" Y="83" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="31" Y="83" />
-                        <ControlPoint X="35" Y="83" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="-31" Y="83" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="-35" Y="83" />
-                        <ControlPoint X="-35" Y="83" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="-165" Y="56" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="-173" Y="48" />
-                        <ControlPoint X="-174.125" Y="54.105" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="-152" Y="-66" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="-147" Y="-73" />
-                        <ControlPoint X="-150.711" Y="-73" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="0" Y="-73" />
-                    </AbsoluteLineTo>
-                </Components>
+            <Path Fill="${KeywellFillColor}" Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y01}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="Pcb" XOffset="-175" YOffset="-80">
+          <Children>
+            <Group Name="PcbPerimeter" Visible="false">
+              <Constants>
+                <Constant Name="X01" Value="27.713" />  <Constant Name="Y01" Value="15.153" />
+                <Constant Name="X02" Value="85.384" />  <Constant Name="Y02" Value="17.198" />
+                <Constant Name="X03" Value="103.209" /> <Constant Name="Y03" Value="20.341" />
+                <Constant Name="X04" Value="138.82" />  <Constant Name="Y04" Value="37.79" />
+                <Constant Name="X05" Value="211.18" />  <Constant Name="Y05" Value="37.79" />
+                <Constant Name="X06" Value="246.791" /> <Constant Name="Y06" Value="20.341" />
+                <Constant Name="X07" Value="264.616" /> <Constant Name="Y07" Value="17.198" />
+                <Constant Name="X08" Value="322.287" /> <Constant Name="Y08" Value="15.153" />
+                <Constant Name="X09" Value="341.97" />  <Constant Name="Y09" Value="126.78" />
+                <Constant Name="X10" Value="305.384" /> <Constant Name="Y10" Value="133.231" />
+                <Constant Name="X11" Value="248.688" /> <Constant Name="Y11" Value="146.275" />
+                <Constant Name="X12" Value="212.102" /> <Constant Name="Y12" Value="152.726" />
+                <Constant Name="X13" Value="203.1" />   <Constant Name="Y13" Value="153.19" />
+                <Constant Name="X14" Value="146.9" />   <Constant Name="Y14" Value="153.19" />
+                <Constant Name="X15" Value="137.898" /> <Constant Name="Y15" Value="152.726" />
+                <Constant Name="X16" Value="101.312" /> <Constant Name="Y16" Value="146.275" />
+                <Constant Name="X17" Value="44.616" />  <Constant Name="Y17" Value="133.231" />
+                <Constant Name="X18" Value="8.03" />    <Constant Name="Y18" Value="126.78" />
+              </Constants>
+              <Children>
+                <Path Fill="#00ff00" Stroke="#00ff00" FillOpacity="0.5">
+                  <Components>
+                    <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                    <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X12}" Y="${Y12}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X13}" Y="${Y13}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X14}" Y="${Y14}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X15}" Y="${Y15}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X16}" Y="${Y16}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X17}" Y="${Y17}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X18}" Y="${Y18}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                  </Components>
+                </Path>
+              </Children>
+            </Group>
+            <Group Name="PcbPerimeter2" Visible="false">
+              <Constants>
+                <Constant Name="X01" Value="26.462" />  <Constant Name="Y01" Value="13.608" />
+                <Constant Name="X02" Value="85.542" />  <Constant Name="Y02" Value="15.703" />
+                <Constant Name="X03" Value="103.678" /> <Constant Name="Y03" Value="18.901" />
+                <Constant Name="X04" Value="139.168" />  <Constant Name="Y04" Value="36.29" />
+                <Constant Name="X05" Value="210.832" />  <Constant Name="Y05" Value="36.290" />
+                <Constant Name="X06" Value="246.322" /> <Constant Name="Y06" Value="18.901" />
+                <Constant Name="X07" Value="264.458" /> <Constant Name="Y07" Value="15.703" />
+                <Constant Name="X08" Value="323.538" /> <Constant Name="Y08" Value="13.608" />
+                <Constant Name="X09" Value="343.708" />  <Constant Name="Y09" Value="127.997" />
+                <Constant Name="X10" Value="305.683" /> <Constant Name="Y10" Value="134.701" />
+                <Constant Name="X11" Value="248.987" /> <Constant Name="Y11" Value="147.745" />
+                <Constant Name="X12" Value="212.272" /> <Constant Name="Y12" Value="154.219" />
+                <Constant Name="X13" Value="203.139" />   <Constant Name="Y13" Value="154.69" />
+                <Constant Name="X14" Value="146.861" />   <Constant Name="Y14" Value="154.69" />
+                <Constant Name="X15" Value="137.729" /> <Constant Name="Y15" Value="154.219" />
+                <Constant Name="X16" Value="101.013" /> <Constant Name="Y16" Value="147.745" />
+                <Constant Name="X17" Value="44.317" />  <Constant Name="Y17" Value="134.701" />
+                <Constant Name="X18" Value="6.292" />    <Constant Name="Y18" Value="127.997" />
+              </Constants>
+              <Children>
+                <Path Fill="#ff0000" Stroke="#ff0000" FillOpacity="0.5">
+                    <!--<Path Stroke="#000000" >-->
+                  <Components>
+                    <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                    <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X12}" Y="${Y12}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X13}" Y="${Y13}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X14}" Y="${Y14}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X15}" Y="${Y15}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X16}" Y="${Y16}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X17}" Y="${Y17}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X18}" Y="${Y18}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                  </Components>
+                </Path>
+              </Children>
+            </Group>
+            <Group Name="PcbPerimeter3" Visible="false">
+              <Constants>
+                <Constant Name="X01" Value="18.126" />  <Constant Name="Y01" Value="3.306" />
+                <Constant Name="X02" Value="86.592" />  <Constant Name="Y02" Value="5.734" />
+                <Constant Name="X03" Value="106.808" /> <Constant Name="Y03" Value="9.298" />
+                <Constant Name="X04" Value="141.486" />  <Constant Name="Y04" Value="26.29" />
+                <Constant Name="X05" Value="208.514" />  <Constant Name="Y05" Value="26.29" />
+                <Constant Name="X06" Value="243.192" /> <Constant Name="Y06" Value="9.298" />
+                <Constant Name="X07" Value="263.408" /> <Constant Name="Y07" Value="5.734" />
+                <Constant Name="X08" Value="331.875" /> <Constant Name="Y08" Value="3.306" />
+                <Constant Name="X09" Value="355.292" />  <Constant Name="Y09" Value="136.108" />
+                <Constant Name="X10" Value="307.673" /> <Constant Name="Y10" Value="144.505" />
+                <Constant Name="X11" Value="250.977" /> <Constant Name="Y11" Value="157.549" />
+                <Constant Name="X12" Value="213.401" /> <Constant Name="Y12" Value="164.174" />
+                <Constant Name="X13" Value="203.396" />   <Constant Name="Y13" Value="164.69" />
+                <Constant Name="X14" Value="146.604" />   <Constant Name="Y14" Value="164.69" />
+                <Constant Name="X15" Value="136.599" /> <Constant Name="Y15" Value="164.174" />
+                <Constant Name="X16" Value="99.0228" /> <Constant Name="Y16" Value="157.549" />
+                <Constant Name="X17" Value="42.327" />  <Constant Name="Y17" Value="144.505" />
+                <Constant Name="X18" Value="-5.292" />    <Constant Name="Y18" Value="136.108" />
+              </Constants>
+              <Children>
+                <Path Stroke="#000000">
+                  <Components>
+                    <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                    <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X12}" Y="${Y12}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X13}" Y="${Y13}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X14}" Y="${Y14}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X15}" Y="${Y15}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X16}" Y="${Y16}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X17}" Y="${Y17}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X18}" Y="${Y18}" /> </AbsoluteLineTo>
+                    <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+                  </Components>
+                </Path>
+              </Children>
+            </Group>
+          </Children>
+        </Group>
+      </Groups>
+    </Layer>
+    <Layer Name="upper_middle" ZIndex="3" XOffset="185" YOffset="80">
+      <Groups>
+        <Group Name="CasePerimeter" XOffset="-185" YOffset="-80">
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteMoveTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="31.123" Y="3.412" /> <ControlPoint X="28.125" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="93.594" Y="5.627" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="99.546" Y="6.255" /> <ControlPoint X="96.592" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="113.854" Y="8.777" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="119.502" Y="10.618" /> <ControlPoint X="116.808" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="148.792" Y="24.97" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="154.486" Y="26.29" /> <ControlPoint X="151.486" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="215.514" Y="26.29" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="221.208" Y="24.97" /> <ControlPoint X="218.514" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="250.498" Y="10.618" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="256.146" Y="8.777" /> <ControlPoint X="253.192" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="270.454" Y="6.255" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="276.406" Y="5.627" /> <ControlPoint X="273.408" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="338.877" Y="3.412" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="342.396" Y="6.26" /> <ControlPoint X="341.875" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="364.771" Y="133.154" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="362.338" Y="136.629" /> <ControlPoint X="365.292" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="320.628" Y="143.984" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="314.75" Y="145.177" /> <ControlPoint X="317.673" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="263.901" Y="156.876" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="258.023" Y="158.07" /> <ControlPoint X="260.977" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="226.356" Y="163.653" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="220.405" Y="164.329" /> <ControlPoint X="223.401" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="216.392" Y="164.536" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="210.396" Y="164.69" /> <ControlPoint X="213.396" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="159.604" Y="164.69" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="153.608" Y="164.536" /> <ControlPoint X="156.604" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="149.595" Y="164.329" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="143.644" Y="163.653" /> <ControlPoint X="146.599" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="111.977" Y="158.07" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="106.099" Y="156.876" /> <ControlPoint X="109.023" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="55.25" Y="145.177" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="49.372" Y="143.984" /> <ControlPoint X="52.327" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="7.662" Y="136.629" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="5.229" Y="133.154" /> <ControlPoint X="4.708" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="InnerCaseEdges" XOffset="-185" YOffset="-80">
+          <Constants>
+            <Constant Name="X01" Value="36.462" />  <Constant Name="Y01" Value="13.608" />
+            <Constant Name="X02" Value="95.542" />  <Constant Name="Y02" Value="15.703" />
+            <Constant Name="X03" Value="113.678" /> <Constant Name="Y03" Value="18.901" />
+            <Constant Name="X04" Value="149.168" />  <Constant Name="Y04" Value="36.29" />
+            <Constant Name="X05" Value="220.832" />  <Constant Name="Y05" Value="36.290" />
+            <Constant Name="X06" Value="256.322" /> <Constant Name="Y06" Value="18.901" />
+            <Constant Name="X07" Value="274.458" /> <Constant Name="Y07" Value="15.703" />
+            <Constant Name="X08" Value="333.538" /> <Constant Name="Y08" Value="13.608" />
+            <Constant Name="X09" Value="353.708" />  <Constant Name="Y09" Value="127.997" />
+            <Constant Name="X10" Value="315.683" /> <Constant Name="Y10" Value="134.701" />
+            <Constant Name="X11" Value="258.987" /> <Constant Name="Y11" Value="147.745" />
+            <Constant Name="X12" Value="222.272" /> <Constant Name="Y12" Value="154.219" />
+            <Constant Name="X13" Value="213.139" />   <Constant Name="Y13" Value="154.69" />
+            <Constant Name="X14" Value="156.861" />   <Constant Name="Y14" Value="154.69" />
+            <Constant Name="X15" Value="147.729" /> <Constant Name="Y15" Value="154.219" />
+            <Constant Name="X16" Value="111.013" /> <Constant Name="Y16" Value="147.745" />
+            <Constant Name="X17" Value="54.317" />  <Constant Name="Y17" Value="134.701" />
+            <Constant Name="X18" Value="16.292" />    <Constant Name="Y18" Value="127.997" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X12}" Y="${Y12}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X13}" Y="${Y13}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X14}" Y="${Y14}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X15}" Y="${Y15}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X16}" Y="${Y16}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X17}" Y="${Y17}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X18}" Y="${Y18}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
             </Path>
           </Children>
         </Group>
       </Groups>
     </Layer>
-    <Layer Name="Middle" ZIndex="3" XOffset="175" YOffset="80">
+    <Layer Name="lower_middle" ZIndex="2" XOffset="185" YOffset="80">
       <Groups>
-        <Group Name="Case">
+        <Group Name="CasePerimeter" XOffset="-185" YOffset="-80">
           <Children>
-            <Circle Size="${M2SpacerSize}" XOffset="-147" YOffset="-68" />
-            <Circle Size="${M2SpacerSize}" XOffset="-25" YOffset="-68" />
-            <Circle Size="${M2SpacerSize}" XOffset="25" YOffset="-68" />
-            <Circle Size="${M2SpacerSize}" XOffset="147" YOffset="-68" />
-            <Circle Size="${M2SpacerSize}" XOffset="-168" YOffset="50" />
-            <Circle Size="${M2SpacerSize}" XOffset="-30" YOffset="78" />
-            <Circle Size="${M2SpacerSize}" XOffset="30" YOffset="78" />
-            <Circle Size="${M2SpacerSize}" XOffset="168" YOffset="50" />
-            <Path>
-                <Components>
-                    <AbsoluteMoveTo><EndPoint X="20" Y="-73" /></AbsoluteMoveTo>
-                    <AbsoluteLineTo><EndPoint X="147" Y="-73" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="152" Y="-66" /><ControlPoint X="150.71052631578948" Y="-73.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="173" Y="48" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="165" Y="56" /><ControlPoint X="174.12458568921818" Y="54.10489374147005" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="35" Y="83" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="31" Y="83" /><ControlPoint X="35.00000000000002" Y="83.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-31" Y="83" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-35" Y="83" /><ControlPoint X="-35.00000000000002" Y="83.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-165" Y="56" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-173" Y="48" /><ControlPoint X="-174.12458568921818" Y="54.10489374147007" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-152" Y="-66" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-147" Y="-73" /><ControlPoint X="-150.71052631578948" Y="-73.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-20" Y="-73" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-19" Y="-72" /><ControlPoint X="-18.985714228571428" Y="-73.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-19.1000004" Y="-65" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-20" Y="-64" /><ControlPoint X="-19.114286171428567" Y="-64.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-143.4" Y="-64" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-144.5" Y="-63.2" /><ControlPoint X="-143.61011235955056" Y="-64.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-164.3" Y="45.4" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-162.68" Y="47.4" /><ControlPoint X="-164.5944377635824" Y="47.01494652146687" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="-35.4" Y="73" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="-35" Y="73" /><ControlPoint X="-35.399999999999984" Y="73.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="35" Y="73" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="35.4" Y="73" /><ControlPoint X="35.399999999999984" Y="73.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="162.68" Y="47.4" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="164.3" Y="45.4" /><ControlPoint X="164.59443776358236" Y="47.014946521466776" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="144.5" Y="-63.2" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="143.4" Y="-64" /><ControlPoint X="144.35414364640883" Y="-64.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="20" Y="-64" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="19.1000004" Y="-65" /><ControlPoint X="19.114286171428567" Y="-64.0" /></AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo><EndPoint X="19" Y="-72" /></AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo><EndPoint X="20" Y="-73" /><ControlPoint X="18.985714228571428" Y="-73.0" /></AbsoluteQuadraticCurveTo>
-                </Components>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteMoveTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="31.123" Y="3.412" /> <ControlPoint X="28.125" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="93.594" Y="5.627" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="99.546" Y="6.255" /> <ControlPoint X="96.592" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="113.854" Y="8.777" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="119.502" Y="10.618" /> <ControlPoint X="116.808" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="148.792" Y="24.97" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="154.486" Y="26.29" /> <ControlPoint X="151.486" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="215.514" Y="26.29" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="221.208" Y="24.97" /> <ControlPoint X="218.514" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="250.498" Y="10.618" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="256.146" Y="8.777" /> <ControlPoint X="253.192" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="270.454" Y="6.255" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="276.406" Y="5.627" /> <ControlPoint X="273.408" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="338.877" Y="3.412" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="342.396" Y="6.26" /> <ControlPoint X="341.875" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="364.771" Y="133.154" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="362.338" Y="136.629" /> <ControlPoint X="365.292" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="320.628" Y="143.984" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="314.75" Y="145.177" /> <ControlPoint X="317.673" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="263.901" Y="156.876" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="258.023" Y="158.07" /> <ControlPoint X="260.977" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="226.356" Y="163.653" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="220.405" Y="164.329" /> <ControlPoint X="223.401" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="216.392" Y="164.536" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="210.396" Y="164.69" /> <ControlPoint X="213.396" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="159.604" Y="164.69" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="153.608" Y="164.536" /> <ControlPoint X="156.604" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="149.595" Y="164.329" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="143.644" Y="163.653" /> <ControlPoint X="146.599" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="111.977" Y="158.07" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="106.099" Y="156.876" /> <ControlPoint X="109.023" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="55.25" Y="145.177" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="49.372" Y="143.984" /> <ControlPoint X="52.327" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="7.662" Y="136.629" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="5.229" Y="133.154" /> <ControlPoint X="4.708" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteLineTo>
+              </Components>
+            </Path>
+          </Children>
+        </Group>
+        <Group Name="InnerCaseEdges" XOffset="-185" YOffset="-80">
+          <Constants>
+            <Constant Name="X01" Value="36.462" />  <Constant Name="Y01" Value="13.608" />
+            <Constant Name="X02" Value="95.542" />  <Constant Name="Y02" Value="15.703" />
+            <Constant Name="X03" Value="113.678" /> <Constant Name="Y03" Value="18.901" />
+            <Constant Name="X04" Value="149.168" />  <Constant Name="Y04" Value="36.29" />
+            <Constant Name="X05" Value="220.832" />  <Constant Name="Y05" Value="36.290" />
+            <Constant Name="X06" Value="256.322" /> <Constant Name="Y06" Value="18.901" />
+            <Constant Name="X07" Value="274.458" /> <Constant Name="Y07" Value="15.703" />
+            <Constant Name="X08" Value="333.538" /> <Constant Name="Y08" Value="13.608" />
+            <Constant Name="X09" Value="353.708" />  <Constant Name="Y09" Value="127.997" />
+            <Constant Name="X10" Value="315.683" /> <Constant Name="Y10" Value="134.701" />
+            <Constant Name="X11" Value="258.987" /> <Constant Name="Y11" Value="147.745" />
+            <Constant Name="X12" Value="222.272" /> <Constant Name="Y12" Value="154.219" />
+            <Constant Name="X13" Value="213.139" />   <Constant Name="Y13" Value="154.69" />
+            <Constant Name="X14" Value="156.861" />   <Constant Name="Y14" Value="154.69" />
+            <Constant Name="X15" Value="147.729" /> <Constant Name="Y15" Value="154.219" />
+            <Constant Name="X16" Value="111.013" /> <Constant Name="Y16" Value="147.745" />
+            <Constant Name="X17" Value="54.317" />  <Constant Name="Y17" Value="134.701" />
+            <Constant Name="X18" Value="16.292" />    <Constant Name="Y18" Value="127.997" />
+          </Constants>
+          <Children>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteMoveTo>
+                <AbsoluteLineTo> <EndPoint X="${X02}" Y="${Y02}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X03}" Y="${Y03}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X04}" Y="${Y04}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X05}" Y="${Y05}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X06}" Y="${Y06}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X07}" Y="${Y07}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X08}" Y="${Y08}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X09}" Y="${Y09}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X10}" Y="${Y10}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X11}" Y="${Y11}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X12}" Y="${Y12}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X13}" Y="${Y13}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X14}" Y="${Y14}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X15}" Y="${Y15}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X16}" Y="${Y16}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X17}" Y="${Y17}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X18}" Y="${Y18}" /> </AbsoluteLineTo>
+                <AbsoluteLineTo> <EndPoint X="${X01}" Y="${Y01}" /> </AbsoluteLineTo>
+              </Components>
             </Path>
           </Children>
         </Group>
       </Groups>
     </Layer>
-    <Layer Name="Bottom" ZIndex="3" XOffset="175" YOffset="80">
+    <Layer Name="bottom" ZIndex="1" XOffset="185" YOffset="80">
       <Groups>
-        <Group Name="Case">
+        <Group Name="CasePerimeter" XOffset="-185" YOffset="-80">
           <Children>
-            <Circle Size="${M2ScrewSize}" XOffset="-147" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="-25" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="25" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="147" YOffset="-68" />
-            <Circle Size="${M2ScrewSize}" XOffset="-168" YOffset="50" />
-            <Circle Size="${M2ScrewSize}" XOffset="-30" YOffset="78" />
-            <Circle Size="${M2ScrewSize}" XOffset="30" YOffset="78" />
-            <Circle Size="${M2ScrewSize}" XOffset="168" YOffset="50" />
-            <Path>
-                <Components>
-                    <AbsoluteMoveTo>
-                        <EndPoint X="0" Y="-73" />
-                    </AbsoluteMoveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="147" Y="-73" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="152" Y="-66" />
-                        <ControlPoint X="150.711" Y="-73" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="173" Y="48" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="165" Y="56" />
-                        <ControlPoint X="174.125" Y="54.105" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="35" Y="83" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="31" Y="83" />
-                        <ControlPoint X="35" Y="83" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="-31" Y="83" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="-35" Y="83" />
-                        <ControlPoint X="-35" Y="83" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="-165" Y="56" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="-173" Y="48" />
-                        <ControlPoint X="-174.125" Y="54.105" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="-152" Y="-66" />
-                    </AbsoluteLineTo>
-                    <AbsoluteQuadraticCurveTo>
-                        <EndPoint X="-147" Y="-73" />
-                        <ControlPoint X="-150.711" Y="-73" />
-                    </AbsoluteQuadraticCurveTo>
-                    <AbsoluteLineTo>
-                        <EndPoint X="0" Y="-73" />
-                    </AbsoluteLineTo>
-                </Components>
+            <Path Stroke="${CaseStrokeColor}">
+              <Components>
+                <AbsoluteMoveTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteMoveTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="31.123" Y="3.412" /> <ControlPoint X="28.125" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="93.594" Y="5.627" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="99.546" Y="6.255" /> <ControlPoint X="96.592" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="113.854" Y="8.777" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="119.502" Y="10.618" /> <ControlPoint X="116.808" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="148.792" Y="24.97" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="154.486" Y="26.29" /> <ControlPoint X="151.486" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="215.514" Y="26.29" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="221.208" Y="24.97" /> <ControlPoint X="218.514" Y="26.29" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="250.498" Y="10.618" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="256.146" Y="8.777" /> <ControlPoint X="253.192" Y="9.298" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="270.454" Y="6.255" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="276.406" Y="5.627" /> <ControlPoint X="273.408" Y="5.734" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="338.877" Y="3.412" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="342.396" Y="6.26" /> <ControlPoint X="341.875" Y="3.306" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="364.771" Y="133.154" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="362.338" Y="136.629" /> <ControlPoint X="365.292" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="320.628" Y="143.984" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="314.75" Y="145.177" /> <ControlPoint X="317.673" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="263.901" Y="156.876" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="258.023" Y="158.07" /> <ControlPoint X="260.977" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="226.356" Y="163.653" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="220.405" Y="164.329" /> <ControlPoint X="223.401" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="216.392" Y="164.536" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="210.396" Y="164.69" /> <ControlPoint X="213.396" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="159.604" Y="164.69" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="153.608" Y="164.536" /> <ControlPoint X="156.604" Y="164.69" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="149.595" Y="164.329" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="143.644" Y="163.653" /> <ControlPoint X="146.599" Y="164.174" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="111.977" Y="158.07" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="106.099" Y="156.876" /> <ControlPoint X="109.023" Y="157.549" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="55.25" Y="145.177" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="49.372" Y="143.984" /> <ControlPoint X="52.327" Y="144.505" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="7.662" Y="136.629" /> </AbsoluteLineTo>
+                <AbsoluteQuadraticCurveTo> <EndPoint X="5.229" Y="133.154" /> <ControlPoint X="4.708" Y="136.108" /> </AbsoluteQuadraticCurveTo>
+                <AbsoluteLineTo> <EndPoint X="27.604" Y="6.26" /> </AbsoluteLineTo>
+              </Components>
             </Path>
           </Children>
         </Group>

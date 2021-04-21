@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg
+  width="500mm"
+  height="500mm"
+  viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <g
+    id="Middle"
+    transform="translate(175,80)">
+    <g
+      id="Case">
+      <g
+        id=""
+        transform="translate(-147,-68)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(-25,-68)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(25,-68)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(147,-68)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(-168,50)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(-30,78)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(30,78)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id=""
+        transform="translate(168,50)">
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+        <circle
+          r="1.7815"
+          style="fill:none;stroke:#0000ff;stroke-width:0.01" />
+      </g>
+      <g
+        id="">
+        <path
+          style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.5"
+          d="M 20 -73 L 147 -73 Q 150.71053 -73 152 -66 L 173 48 Q 174.12459 54.104893 165 56 L 35 83 Q 35 83 31 83 L -31 83 Q -35 83 -35 83 L -165 56 Q -174.12459 54.104893 -173 48 L -152 -66 Q -150.71053 -73 -147 -73 L -20 -73 Q -18.985714 -73 -19 -72 L -19.1 -65 Q -19.114286 -64 -20 -64 L -143.4 -64 Q -143.6101 -64 -144.5 -63.2 L -164.3 45.4 Q -164.59444 47.014946 -162.68 47.4 L -35.4 73 Q -35.4 73 -35 73 L 35 73 Q 35.4 73 35.4 73 L 162.68 47.4 Q 164.59444 47.014946 164.3 45.4 L 144.5 -63.2 Q 144.35414 -64 143.4 -64 L 20 -64 Q 19.114286 -64 19.1 -65 L 19 -72 Q 18.985714 -73 20 -73" />
+      </g>
+    </g>
+  </g>
+</svg>
